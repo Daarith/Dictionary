@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1051.0" prefWidth="1425.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dictionary.InputData.InputDateFXMLController">
+   <children>
+      <ImageView fitHeight="1153.0" fitWidth="1425.0" layoutX="6.0" layoutY="-105.0" pickOnBounds="true">
+         <image>
+            <Image url="@Image/Dictionary.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="510.0" layoutY="17.0" prefHeight="50.0" prefWidth="250.0" text="វចនានុក្រម" textFill="#ff1a0a">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <HBox layoutX="407.0" layoutY="111.0" />
+      <HBox layoutX="112.0" layoutY="170.0" prefHeight="40.0" prefWidth="380.0" />
+      <HBox layoutX="554.0" layoutY="170.0" />
+      <HBox layoutX="1002.0" layoutY="170.0" />
+      <HBox layoutX="116.0" layoutY="242.0" />
+      <HBox layoutX="112.0" layoutY="302.0" />
+      <HBox layoutX="116.0" layoutY="362.0" />
+      <HBox layoutX="123.0" layoutY="532.0" />
+      <HBox layoutX="118.0" layoutY="648.0" />
+      <HBox layoutX="118.0" layoutY="722.0" />
+      <HBox layoutX="118.0" layoutY="788.0" />
+      <HBox layoutX="118.0" layoutY="855.0" />
+      <HBox layoutX="116.0" layoutY="926.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="137.0" layoutX="246.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <ImageView fx:id="Img" fitHeight="137.0" fitWidth="200.0" layoutX="246.0" layoutY="442.0" onMouseClicked="#AddImageview" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="245.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Button layoutX="239.0" layoutY="953.0" mnemonicParsing="false" onAction="#btnSave" prefHeight="59.0" prefWidth="152.0" text="រក្សាទុក" textFill="#da0808">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button layoutX="432.0" layoutY="953.0" mnemonicParsing="false" onAction="#btnSearch" prefHeight="59.0" prefWidth="168.0" text="ស្វែងរក" textFill="#da0808">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button layoutX="642.0" layoutY="953.0" mnemonicParsing="false" onAction="#btnSavechange" prefHeight="59.0" prefWidth="200.0" text="កែប្រែ" textFill="#da0808">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <TextArea fx:id="Description" layoutX="245.0" layoutY="318.0" prefHeight="110.0" prefWidth="300.0" AnchorPane.leftAnchor="245.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextArea>
+      <TextField fx:id="KeywordKhmer" layoutX="245.0" layoutY="142.0" prefHeight="40.0" prefWidth="250.0" AnchorPane.leftAnchor="245.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="116.0" layoutY="142.0" prefHeight="40.0" prefWidth="130.0" text="មេពាក្យ (ខ្មែរ)" textFill="#282727" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="505.0" layoutY="144.0" prefHeight="40.0" prefWidth="168.0" text="មេពាក្យ (អង់គ្លេស)" textFill="#282727">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="KeywordEnglish" layoutX="674.0" layoutY="144.0" prefHeight="40.0" prefWidth="250.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="938.0" layoutY="142.0" prefHeight="40.0" prefWidth="152.0" text="មេពាក្យ (បារាំង)" textFill="#282727">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="KeywordFrance" layoutX="1091.0" layoutY="142.0" prefHeight="40.0" prefWidth="250.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="Reading" layoutX="245.0" layoutY="202.0" prefHeight="40.0" prefWidth="300.0" AnchorPane.leftAnchor="245.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="116.0" layoutY="202.0" prefHeight="40.0" prefWidth="130.0" text="សូអាន" textFill="#282727" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="Wordclass" layoutX="245.0" layoutY="262.0" prefHeight="40.0" prefWidth="300.0" AnchorPane.leftAnchor="245.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="116.0" layoutY="262.0" prefHeight="40.0" prefWidth="130.0" text="ថ្នាក់ពាក្យ" textFill="#282727" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="108.0" layoutY="340.0" prefHeight="40.0" prefWidth="130.0" text="សេចក្ដីពន្យល់" textFill="#282727" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="92.0" layoutY="597.0" prefHeight="40.0" prefWidth="130.0" text="គណៈកម្មការ" textFill="#282727" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="Committee" layoutX="245.0" layoutY="597.0" prefHeight="40.0" prefWidth="300.0" AnchorPane.leftAnchor="245.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="91.0" layoutY="655.0" prefHeight="40.0" prefWidth="130.0" text="ជំនាញ" textFill="#282727" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="Skillblog" layoutX="245.0" layoutY="655.0" prefHeight="40.0" prefWidth="300.0" AnchorPane.leftAnchor="245.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <DatePicker fx:id="TxtDate" editable="false" layoutX="245.0" layoutY="713.0" AnchorPane.leftAnchor="245.0" />
+      <Label layoutX="112.0" layoutY="709.0" prefHeight="40.0" prefWidth="130.0" text="កាលបរិច្ឆេទ" textFill="#282727" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="Addition" layoutX="245.0" layoutY="762.0" prefHeight="40.0" prefWidth="300.0" AnchorPane.leftAnchor="245.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="112.0" layoutY="762.0" prefHeight="40.0" prefWidth="130.0" text="បន្ថែម" textFill="#282727" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="Other" layoutX="246.0" layoutY="824.0" prefHeight="85.0" prefWidth="400.0" AnchorPane.leftAnchor="245.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="112.0" layoutY="847.0" prefHeight="40.0" prefWidth="130.0" text="ផ្សេងៗ" textFill="#282727" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Button layoutX="1087.0" layoutY="953.0" mnemonicParsing="false" onAction="#BtnReset" prefHeight="59.0" prefWidth="168.0" text="ចាកចេញ" textFill="#da0808">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="Btnsave" layoutX="881.0" layoutY="953.0" mnemonicParsing="false" onAction="#BtnDelete" prefHeight="59.0" prefWidth="168.0" text="លុប" textFill="#da0808">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="842.0" layoutY="838.0" mnemonicParsing="false" onAction="#onTableViewClick" prefHeight="59.0" prefWidth="341.0" text="ស្វែងរកតាមអក្សរ" textFill="#da0808">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
